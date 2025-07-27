@@ -3,16 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-    "homepage": "https://danganhnguyenn.github.io/webbansach_frontend",
+  "homepage": "https://danganhnguyenn.github.io/webbansach_frontend",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-      "predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "flowbite": "^3.1.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

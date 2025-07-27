@@ -1,3 +1,9 @@
+import img1 from '../../../images/books/img1.jpg';
+import img2 from '../../../images/books/img2.jpg';
+import img3 from '../../../images/books/img3.jpg';
+import img4 from '../../../images/books/img4.jpg';
+import img5 from '../../../images/books/img5.jpg';
+
 function Carousel() {
   return (
 
@@ -8,31 +14,31 @@ function Carousel() {
               {/* Item 1 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src="https://salt.tikicdn.com/ts/brickv2og/5a/eb/43/b6757b308e0195aaad79d8dd19d88fc2.jpg"
+                      src={img1}
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 2 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2021_8_16_637647225964305254_tonari-no-totoro-hang-xom-cua-toi-la-totoro-1988.jpg"
+                      src={img2}
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 3 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src="https://file.hstatic.net/200000294254/collection/collection-banner_e5c86b52cd0f458b824674cd64bb49c2.jpg"
+                      src={img3}
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 4 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUM6Yi4eov64WGQxPQDIFiCy8Hc2zNAbaMDg&s"
+                      src={img4}
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 5 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src="https://png.pngtree.com/thumb_back/fh260/background/20250708/pngtree-anime-girl-reading-a-book-outdoors-in-meadow-with-mountains-and-image_17602076.webp"
+                      src={img5}
                       className="w-full h-full object-cover" alt="..."/>
               </div>
           </div>
