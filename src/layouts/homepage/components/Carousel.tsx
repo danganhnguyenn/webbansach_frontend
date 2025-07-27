@@ -1,57 +1,82 @@
 function Carousel() {
   return (
-    
 
-<div id="default-carousel" className="relative w-full" data-carousel="slide">
-    {/* Carousel wrapper */}
-    <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-         {/* Item 1 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX85rcAp8PuwE8xRCgVpuDn9AksfRGxlwJRA&s" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        {/* Item 2 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2021_8_16_637647225964305254_tonari-no-totoro-hang-xom-cua-toi-la-totoro-1988.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        {/* Item 3 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://file.hstatic.net/200000294254/collection/collection-banner_e5c86b52cd0f458b824674cd64bb49c2.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        {/* Item 4 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4NT0iH6wrPQ3ot3MmMA1rJQWix9Ak_WEBg&s" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        {/* Item 5 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://png.pngtree.com/thumb_back/fh260/background/20250708/pngtree-anime-girl-reading-a-book-outdoors-in-meadow-with-mountains-and-image_17602076.webp" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-    </div>
-    {/* Slider indicators */}
-    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    {/* Slider controls */}
-    <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+
+      <div id="default-carousel" className="relative w-full" data-carousel="slide">
+          {/* Carousel wrapper */}
+          <div className="relative overflow-hidden rounded-lg" style={{height: '500px'}}>
+              {/* Item 1 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                      src="https://salt.tikicdn.com/ts/brickv2og/5a/eb/43/b6757b308e0195aaad79d8dd19d88fc2.jpg"
+                      className="w-full h-full object-cover" alt="..."/>
+              </div>
+              {/* Item 2 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                      src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2021_8_16_637647225964305254_tonari-no-totoro-hang-xom-cua-toi-la-totoro-1988.jpg"
+                      className="w-full h-full object-cover" alt="..."/>
+              </div>
+              {/* Item 3 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                      src="https://file.hstatic.net/200000294254/collection/collection-banner_e5c86b52cd0f458b824674cd64bb49c2.jpg"
+                      className="w-full h-full object-cover" alt="..."/>
+              </div>
+              {/* Item 4 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUM6Yi4eov64WGQxPQDIFiCy8Hc2zNAbaMDg&s"
+                      className="w-full h-full object-cover" alt="..."/>
+              </div>
+              {/* Item 5 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                      src="https://png.pngtree.com/thumb_back/fh260/background/20250708/pngtree-anime-girl-reading-a-book-outdoors-in-meadow-with-mountains-and-image_17602076.webp"
+                      className="w-full h-full object-cover" alt="..."/>
+              </div>
+          </div>
+          {/* Slider indicators */}
+          <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+              <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                      data-carousel-slide-to="0"></button>
+              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                      data-carousel-slide-to="1"></button>
+              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                      data-carousel-slide-to="2"></button>
+              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                      data-carousel-slide-to="3"></button>
+              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                      data-carousel-slide-to="4"></button>
+          </div>
+          {/* Slider controls */}
+          <button type="button"
+                  className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev>
+        <span
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 1 1 5l4 4"/>
             </svg>
             <span className="sr-only">Previous</span>
         </span>
-    </button>
-    <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </button>
+          <button type="button"
+                  className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next>
+        <span
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4"/>
             </svg>
             <span className="sr-only">Next</span>
         </span>
-    </button>
-</div>
+          </button>
+      </div>
 
   );
 }
