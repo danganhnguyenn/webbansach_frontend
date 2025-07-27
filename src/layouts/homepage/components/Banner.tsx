@@ -1,61 +1,69 @@
-function Banner() {
+const Banner = () => {
   return (
-    <div
-      id="sticky-banner"
-      tabIndex={-1}
-      className="relative z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600"
-    >
-      <div className="flex items-center mx-auto">
-        <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-          <span className="inline-flex p-1 me-3 bg-gray-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center shrink-0">
+      <div
+          id="banner"
+          tabIndex={-1}
+          className="relative z-50 w-full p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 md:p-8"
+      >
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-6 max-w-7xl mx-auto">
+          <div className="flex items-center space-x-4">
+          <span className="inline-flex p-3 bg-green-100 dark:bg-green-900 rounded-full w-12 h-12 items-center justify-center shrink-0">
             <svg
-              className="w-3 h-3 text-gray-500 dark:text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 18 19"
+                className="w-6 h-6 text-green-600 dark:text-green-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
             >
-              <path d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z" />
+              <path d="M14 2H6a2 2 0 0 0-2 2v16l6-3 6 3V4a2 2 0 0 0-2-2Z" />
             </svg>
-            <span className="sr-only">Light bulb</span>
+            <span className="sr-only">Book icon</span>
           </span>
-          <span>
-            Đọc sách chính là nguồn cảm hứng vô tận! {" "}
+            <div className="text-center md:text-left">
+              <p className="text-lg font-bold text-gray-900 dark:text-gray-100 md:text-xl">
+                Khám Phá Kho Tàng Sách Hay - Mở Ra Thế Giới Tri Thức!
+              </p>
+              <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                Giảm ngay 20% cho tất cả sách &amp; miễn phí giao hàng toàn quốc từ hôm nay đến 30/7!
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-4">
             <a
-              href="https://flowbite.com"
-              className="inline font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                href=""
+                className="inline-flex items-center px-6 py-3 text-base font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 transition-colors duration-200"
             >
-              Flowbite Library
+              Săn Sách Ngay
             </a>
-          </span>
-        </p>
+            <button
+                type="button"
+                className="shrink-0 inline-flex justify-center w-8 h-8 items-center text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full text-sm p-1.5 transition-colors duration-200"
+                onClick={() => {
+                  const banner = document.getElementById('banner');
+                  if (banner) banner.style.display = 'none';
+                }}
+            >
+              <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+              >
+                <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span className="sr-only">Đóng banner</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center">
-        <button
-          data-dismiss-target="#sticky-banner"
-          type="button"
-          className="shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          <svg
-            className="w-3 h-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-            />
-          </svg>
-          <span className="sr-only">Close banner</span>
-        </button>
-      </div>
-    </div>
   );
-}
+};
 
 export default Banner;
