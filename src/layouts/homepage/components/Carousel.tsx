@@ -1,8 +1,3 @@
-import img1 from '../../../images/books/img1.jpg';
-import img2 from '../../../images/books/img2.jpg';
-import img3 from '../../../images/books/img3.jpg';
-import img4 from '../../../images/books/img4.jpg';
-import img5 from '../../../images/books/img5.jpg';
 
 function Carousel() {
   return (
@@ -14,31 +9,31 @@ function Carousel() {
               {/* Item 1 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src={img1}
+                      src="./images/books/img1.jpg"
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 2 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src={img2}
+                      src="./images/books/img2.jpg"
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 3 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src={img3}
+                      src="./images/books/img3.jpg"
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 4 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src={img4}
+                      src="./images/books/img4.jpg"
                       className="w-full h-full object-cover" alt="..."/>
               </div>
               {/* Item 5 */}
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                      src={img5}
+                      src="./images/books/img5.jpg"
                       className="w-full h-full object-cover" alt="..."/>
               </div>
           </div>

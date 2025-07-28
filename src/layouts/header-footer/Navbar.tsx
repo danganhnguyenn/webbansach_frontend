@@ -1,6 +1,6 @@
 function Navbar() {
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-50 fixed top-0 left-0 right-0 w-full">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a
                     href="#"
@@ -79,7 +79,7 @@ function Navbar() {
                             {/* Dropdown menu */}
                             <div
                                 id="dropdownNavbar"
-                                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                                className="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
                             >
                                 <ul
                                     className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -120,7 +120,7 @@ function Navbar() {
                                         </button>
                                         <div
                                             id="doubleDropdown"
-                                            className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+                                            className="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
                                         >
                                             <ul
                                                 className="py-2 text-sm text-gray-700 dark:text-gray-200"

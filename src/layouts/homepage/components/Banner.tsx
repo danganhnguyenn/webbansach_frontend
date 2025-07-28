@@ -3,7 +3,7 @@ const Banner = () => {
       <div
           id="banner"
           tabIndex={-1}
-          className="relative z-50 w-full p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 md:p-8"
+          className="relative  w-full p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 md:p-8"
       >
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-6 max-w-7xl mx-auto">
           <div className="flex items-center space-x-4">
